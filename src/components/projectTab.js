@@ -96,9 +96,8 @@ const TabRouter = () => {
   },[])
   return (
     <div className='d-flex justify-content-center  '>
-      <Box sx={{ typography: 'body1' }} className=" w-100 d-flex justify-content-center" >
+      <Box sx={{ typography: 'body1' }} className=" w-100 " >
         <Tabs
-        className='d-flex justify-content-center  '
           value={activeTab}
           aria-label="Tab Router"
           TabIndicatorProps={{
