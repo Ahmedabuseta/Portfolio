@@ -96,8 +96,10 @@ const TabRouter = () => {
   },[])
   return (
     <div className='d-flex justify-content-center  '>
-      <Box sx={{ typography: 'body1' }} className=" w-100 " >
+      <Box sx={{ typography: 'body1' }} >
         <Tabs
+         className=" container-lg ps-lg-5 pe-lg-5"
+        variant="fullWidth"
           value={activeTab}
           aria-label="Tab Router"
           TabIndicatorProps={{
@@ -109,7 +111,7 @@ const TabRouter = () => {
           {tabs.map((tab) => (
             <Tab
             id={`${tab.id}`}
-              className="ps-md-4 p-xs-2 pe-md-4 pt-3 pb-3  "
+              className=" pt-3 pb-3  "
               key={tab.path}
               label={tab.label}
               component={Link}
