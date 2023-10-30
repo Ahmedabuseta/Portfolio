@@ -1,0 +1,75 @@
+
+
+
+
+
+#navBar,#connect-btn{
+    background-color: transparent;
+}
+#social-links li{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    line-height:  1rem;
+    border: #888 solid 1px;
+    margin-right:10px ;
+}
+#social-links li::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: .3s;
+    background-color: #fff;
+    border-radius: 50%;
+}
+#social-links li:hover::before{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+#social-links li:hover .social-icon{
+    color: black;
+    position: relative;
+    z-index: 22;
+}
+#connect-btn::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0%;
+    left: 0;
+    background-color: #fff;
+    transition: .3s;
+    z-index: -1;
+}
+#connect-btn:hover::before{
+    width: 100%;
+}
+#connect-btn:hover{
+    color: black !important;
+    position: relative;
+    z-index: 22;
+}
+.nav-active{
+    font-weight: bold;
+    color: #fff;
+}
+.welcome-title{
+    background: linear-gradient(90.21deg, rgba(170, 54, 124, 0.5) -5.91%, rgba(74, 47, 189, 0.5) 111.58%) !important ;
+}
+.connect-btn:hover #arrow-icon{
+    transform: translate('20px');
+    transition: .6s;
+}
+.bg-daark{
+    background-color: #000 !important;
+}

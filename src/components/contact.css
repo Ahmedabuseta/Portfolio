@@ -1,0 +1,18 @@
+.input::placeholder{
+    color: #fff;
+}
+input{
+    width: 49% !important;
+    backdrop-filter: blur(10px) !important;
+}
+.input:focus{
+    outline: none;
+    color: black !important;
+    background-color: #fff !important;
+}
+.input:focus::placeholder{
+    color: #555 !important;
+}
+#connect {
+    text-transform: capitalize;
+}
