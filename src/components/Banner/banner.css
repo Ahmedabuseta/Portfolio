@@ -1,0 +1,24 @@
+
+#banner{
+    background-image:  url('../../assets/img/banner-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover !important;
+}
+
+.welcome-title{
+    background: linear-gradient( to right,#5f30ae,#973489);
+    width: fit-content;
+}
+.connect-btn:hover #arrow-btn{
+    transform: translate(15px);
+    transition: .5s;
+}
+.animate-up-down{
+    animation: upDown 3s forwards 0s infinite ;
+}
+@keyframes upDown {
+    50%{
+        transform: translateY(-25px);
+    }
+}
