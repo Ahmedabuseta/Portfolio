@@ -30,10 +30,13 @@
     height: 100%;
     border-radius: 50%;
 }
+.fixed-top{
+    z-index:10 !important;
+}
 #social-links li:hover .social-icon{
     color: black;
     position: relative;
-    z-index: 22;
+    z-index: 15;
 }
 #connect-btn::before{
     content: "";
@@ -52,7 +55,7 @@
 #connect-btn:hover{
     color: black !important;
     position: relative;
-    z-index: 22;
+    z-index: 15;
 }
 .nav-active{
     font-weight: bold !important;
